@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DV project</title>
+    <link rel="stylesheet" href="https://unpkg.com/nouislider@10.0.0/distribute/nouislider.min.css">
+
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__container">
+        <div class="header__wrapper">
+          <a href="#" class="header__logo"> Text Visualization Browser </a>
+
+          <nav class="header__nav nav">
+            <ul class="header__list">
+              <li class="header__item">
+                <a class="header__link" href="#">About</a>
+              </li>
+              <li class="header__item">
+                <a class="header__link" href="#">Summary</a>
+              </li>
+              <li class="header__item">
+                <a class="header__link" href="#">Add entry</a>
+              </li>
+              <li class="header__item">
+                <a class="header__link" href="#">Other surveys</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <aside class="sidebar">
+      <div class="sidebar__wrapper">
+        <div class="sidebar__item total">
+          <p class="total__text">Techniques displayed:</p>
+          <p class="total__number">440</p>
+        </div>
+        <div class="sidebar__item search">
+          <p class="search__text">Search:</p>
+
+          <input type="search" class="search__input" />
+        </div>
+        <div class="sidebar__filter filter">
+          <div id="nonlinear" class="noUi-target noUi-ltr noUi-horizontal"></div>
+          <span class="example-val" id="lower-value"></span>
+          <span class="example-val" id="upper-value"></span>
+        </div>
+      </div>
+    </aside>
+    <main>
+      <section class="main">
+        <div class="main__wrapper">
+          <div class="main__list"></div>
+        </div>
+      </section>
+    </main>
+
+    <!-- <footer class="footer">
+      <p>© ISOVIS group 2014–2024. All rights for the technique images belong to their respective owners.</p>
+    </footer> -->
+
+    <div class="popup">
+      <div class="popup__wrapper">
+        <div class="popup__img">
+          <img src="" alt="" />
+        </div>
+        <div class="popup__info">
+          <h2 class="popup__title">Scalable Visualization of Sentiment and Stance (2018)</h2>
+          <p class="popup__author">by Jon Chamberlain, Udo Kruschwitz, and Orland Hoeber</p>
+          <p class="popup__text">
+            Jon Chamberlain, Udo Kruschwitz, and Orland Hoeber. Scalable Visualisation of Sentiment and Stance. Proceedings of the International Conference on
+            Language Resources and Evaluation (LREC), pp. 4181-4182, 2018.
+          </p>
+          <div class="popup__url">
+            <p class="popup__url-text">URL:</p>
+            <a href="" class="popup__url-link"> https://doi.org/10.1109/TVCG.2019.2903946</a>
+          </div>
+        </div>
+        <div class="popup__exit">×</div>
+      </div>
+    </div>
+    <script src="https://unpkg.com/nouislider@10.0.0/distribute/nouislider.min.js"></script>
+
+    <script src="./js/settings.js"></script>
+  </body>
+</html>
