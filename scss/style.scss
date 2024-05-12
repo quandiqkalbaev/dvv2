@@ -204,6 +204,11 @@ main {
     display: flex;
     padding: 25px;
     gap: 25px;
+    @media (max-width: 1600px) {
+      height: 50%;
+    width: 80%;
+
+    }
   }
   &__img {
     max-width: 300px;
@@ -237,7 +242,7 @@ main {
       font-weight: 700;
     }
   }
-  &__bibtex{
+  &__bibtex {
     margin-top: 10px;
   }
   &__exit {

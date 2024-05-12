@@ -241,6 +241,12 @@ main {
   padding: 25px;
   gap: 25px;
 }
+@media (max-width: 1600px) {
+  .popup__wrapper {
+    height: 50%;
+    width: 80%;
+  }
+}
 .popup__img {
   max-width: 300px;
   width: 100%;
