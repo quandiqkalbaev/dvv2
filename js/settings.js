@@ -36,6 +36,7 @@ datas.then((data) => {
   let itemAuthor = document.querySelector(".popup__author");
   let itemText = document.querySelector(".popup__text");
   let itemUrl = document.querySelector(".popup__url-link");
+  let itemBibtex = document.querySelector(".popup__bibtex");
   let popup = document.querySelector(".popup");
   let popupExit = document.querySelector(".popup__exit");
   items.forEach((el, i) => {
@@ -50,6 +51,7 @@ datas.then((data) => {
       itemText.innerHTML = data[dataId].text;
       itemUrl.innerHTML = data[dataId].source;
       itemUrl.setAttribute("href", data[dataId].source);
+      itemBibtex.setAttribute("href", data[dataId].bibtex);
     });
   });
   popupExit.addEventListener("click", () => {

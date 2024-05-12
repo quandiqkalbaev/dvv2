@@ -279,6 +279,9 @@ main {
 .popup__url-text {
   font-weight: 700;
 }
+.popup__bibtex {
+  margin-top: 10px;
+}
 .popup__exit {
   position: absolute;
   font-size: 36px;
