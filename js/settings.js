@@ -49,6 +49,7 @@ datas.then((data) => {
       itemAuthor.innerHTML = data[dataId].author;
       itemText.innerHTML = data[dataId].text;
       itemUrl.innerHTML = data[dataId].source;
+      itemUrl.setAttribute("href", data[dataId].source);
     });
   });
   popupExit.addEventListener("click", () => {
@@ -82,18 +83,18 @@ datas.then((data) => {
   });
 });
 
-var nonLinearSlider = document.getElementById('nonlinear');
+var nonLinearSlider = document.getElementById("nonlinear");
 
 noUiSlider.create(nonLinearSlider, {
-	connect: true,
-	behaviour: 'tap',
-	start: [ 2012, 2024 ],
-	range: {
-		min: 2012,
-		max: 2024
-	}
+  connect: true,
+  behaviour: "tap",
+  start: [2012, 2024],
+  range: {
+    min: 2012,
+    max: 2024,
+  },
 });
 var nodes = [
-	document.getElementById('lower-value'), // 0
-	document.getElementById('upper-value')  // 1
+  document.getElementById("lower-value"), // 0
+  document.getElementById("upper-value"), // 1
 ];
